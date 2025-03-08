@@ -1,0 +1,1 @@
+From elestio/searxng:latest
