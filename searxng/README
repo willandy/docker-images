@@ -1,3 +1,8 @@
 docker run -p 6688:8080 --name searxng registry.cn-shanghai.aliyuncs.com/middle-all/searxng:latest
 
+如果要使用数据卷，具体使用可以查看“Langchain总结.docx”中的“搭建超级搜索引擎Searxng服务器”：
+docker run -p 6688:8080 --name searxng \
+-v /opt/software/searxng/settings.yml:/usr/local/searxng/searx/settings.yml \
+registry.cn-shanghai.aliyuncs.com/middle-all/searxng:latest
+
 网址：http://192.168.29.129:6688/
